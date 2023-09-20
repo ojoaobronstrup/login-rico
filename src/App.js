@@ -1,7 +1,9 @@
+import Inicio from './componentes/inicio'
+
 function App() {
   return (
     <>
-
+      <Inicio/>
     </>
   );
 }
