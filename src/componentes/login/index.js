@@ -2,27 +2,21 @@ import { useState, useEffect } from 'react'
 import Senha from './senha'
 
 export default function Login() {
-    const numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-     const [pos, setPos] = useState(Math.floor(Math.random() * 10))
-    const [setPosValue, setSetPosValue] = useState(Math.floor(Math.random() * 10))
-
-    // Função para gerar um número aleatório diferente de pos
-    const posDiferente = () => {
-        let newNumber;
-        do {
-            newNumber = Math.floor(Math.random() * 10);
-        } while (newNumber === pos)
-        return newNumber;
-    }
+    const [pos, setPos] = useState([])
 
     useEffect(() => {
-        setPos(posDiferente())
-        setSetPosValue(posDiferente())
+        let newPos = []
+        while(newPos.length < 10){
+            let r = Math.floor(Math.random() * 10)
+            if(newPos.indexOf(r) === -1) newPos.push(r) //newPos[r]
+            console.log(newPos)
+        }
+        setPos(newPos)
     }, [])
 
     return (
         <div className="h-[50vh] bg-yellow-200 mx-3">
-            <Senha num1={`${numeros[pos]} ou ${numeros[setPosValue]}`}/>
+            <Senha num1={`${pos[0]} ou ${pos[1]}`} num2={`${pos[2]} ou ${pos[3]}`} num3={`${pos[4]} ou ${pos[5]}`} num4={`${pos[6]} ou ${pos[7]}`} num5={`${pos[8]} ou ${pos[9]}`}/>
         </div>
     )
 }
