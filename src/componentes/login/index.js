@@ -8,7 +8,7 @@ export default function Login() {
         let newPos = []
         while(newPos.length < 10){
             let r = Math.floor(Math.random() * 10)
-            if(newPos.indexOf(r) === -1) newPos.push(r) //newPos[r]
+            if(newPos.indexOf(r) === -1) newPos.push(r)
             console.log(newPos)
         }
         setPos(newPos)
