@@ -1,13 +1,13 @@
 export default function inicio () {
     return (
-        <div className='h-[35vh] flex flex-col'>
-            <div className="h-[40vh] bg-blue-900 flex items-center justify-center flex-col">
-                <img src="./img/rico.png" alt="Logo da corretora Rico" className="scale-[0.4]"/>
-                <div className="flex mb-20 gap-[60vw]">
-                    <h4 className="text-white">Token</h4>
-                    <h4 className="text-white">Abrir conta</h4>
-                </div>
+        <div className='h-[35vh] bg-blue-900 flex flex-col justify-between'>
+            <div className="flex justify-center items-center h-[32vh]">
+                <img src="./img/rico.png" alt="Logo da corretora Rico" className="h-[20vh] w-[30vw]"/>
             </div>
+            <div className="flex h-[3vh] justify-between mx-[1em]">
+                <h4 className="text-white">Token</h4>
+                <h4 className="text-white">Abrir conta</h4>
+            </div>            
         </div>
     )
 }
