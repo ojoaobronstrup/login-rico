@@ -16,8 +16,15 @@ export default function Login() {
     }, [])
 
     return (
-        <div className="h-[50vh] bg-white mt-[0.5em]">
-            <Senha num1={`${pos[0]} ou ${pos[1]}`} num2={`${pos[2]} ou ${pos[3]}`} num3={`${pos[4]} ou ${pos[5]}`} num4={`${pos[6]} ou ${pos[7]}`} num5={`${pos[8]} ou ${pos[9]}`}/>
+        <div className="h-[49vh] bg-white mt-[0.5em] flex flex-col">
+            <input type="password" className="border-b-solid border-b-[3px] border-b-laranja w-[90vw] h-[9vh] self-center"></input>
+            <div className="h-[32vh] flex flex-col justify-center">
+                <h3 className="mx-3 border-b-laranja border-b-solid border-b-[3px] w-[40vw]">Esqueci minha senha</h3>
+                <Senha num1={`${pos[0]} ou ${pos[1]}`} num2={`${pos[2]} ou ${pos[3]}`} num3={`${pos[4]} ou ${pos[5]}`} num4={`${pos[6]} ou ${pos[7]}`} num5={`${pos[8]} ou ${pos[9]}`}/>
+            </div>
+            <button className="bg-laranja w-screen h-[8vh]">
+                ACESSAR
+            </button>
         </div>
     )
 }

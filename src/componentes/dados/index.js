@@ -5,7 +5,6 @@ export default function dados ({nome, conta}) {
                 <h4 className="uppercase">{nome}</h4>
                 <h2 className="uppercase text-[26px]">{conta}</h2>
             </div>
-            <img/>
         </div>
     )
 }

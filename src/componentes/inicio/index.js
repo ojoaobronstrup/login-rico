@@ -1,6 +1,6 @@
 export default function inicio () {
     return (
-        <div className='h-[35vh] bg-blue-900 flex flex-col justify-between'>
+        <div className='h-[40vh] bg-blue-900 flex flex-col justify-between'>
             <div className="flex justify-center items-center h-[32vh]">
                 <img src="./img/rico.png" alt="Logo da corretora Rico" className="h-[15vh] w-[30vw]"/>
             </div>
