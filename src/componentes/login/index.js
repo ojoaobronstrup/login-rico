@@ -16,7 +16,7 @@ export default function Login() {
     }, [])
 
     return (
-        <div className="h-[50vh] mx-3">
+        <div className="h-[50vh] bg-white mt-[0.5em]">
             <Senha num1={`${pos[0]} ou ${pos[1]}`} num2={`${pos[2]} ou ${pos[3]}`} num3={`${pos[4]} ou ${pos[5]}`} num4={`${pos[6]} ou ${pos[7]}`} num5={`${pos[8]} ou ${pos[9]}`}/>
         </div>
     )

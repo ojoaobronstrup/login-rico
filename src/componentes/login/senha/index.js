@@ -4,7 +4,7 @@ export default function senha ({num1, num2, num3, num4, num5, apaga}) {
     }
 
     return (
-        <div className="h-[20vh] grid grid-cols-3 grid-rows-2 gap-[1em]">
+        <div className="h-[20vh] grid grid-cols-3 grid-rows-2 gap-[1em] p-3">
             <h1 className="col-start-1 col-end-2 bg-laranja flex items-center justify-center" id="num1" onClick={pegaValor}>{num1}</h1>
             <h1 className="col-start-2 col-end-3 bg-laranja flex items-center justify-center" id="num2">{num2}</h1>
             <h1 className="col-start-3 col-end-4 bg-laranja flex items-center justify-center" id="num3">{num3}</h1>
